@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <main className="flex flex-col min-h-screen">
         <Header />
-        <div className="flex flex-row flex-1 min-h-full m-5">
+        <div className="flex flex-col md:flex-row flex-1 m-4">
           <Sidebar />
           <Calendar />
         </div>

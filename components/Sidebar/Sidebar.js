@@ -21,7 +21,7 @@ const courses = [
 
 const Sidebar = () => {
   return (
-    <div className="w-1/4 border border-black rounded-md m-5 p-4">
+    <div className="md:w-1/4 border-4 border-yellow-500 rounded-2xl bg-green-50 m-5 p-4">
       <h2 className="text-center font-bold text-lg">Courses</h2>
       {courses.map((course) => {
         return <SidebarCourse key={course.id} course={course} />;
