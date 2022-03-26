@@ -1,5 +1,5 @@
-import Head from 'next/head';
 import Calendar from '../components/Calendar/Calendar';
+import Head from 'next/head';
 import Header from '../components/Header/Header';
 import Sidebar from '../components/Sidebar/Sidebar';
 
