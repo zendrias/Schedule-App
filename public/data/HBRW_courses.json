@@ -1,0 +1,20 @@
+[
+    {
+        "COURSE_ATTR": "Not Available",
+        "COURSE_ID": "HBRW 102 01",
+        "COURSE_PTRM": "1",
+        "CREDIT_HRS": "4",
+        "CRN_ID": "26142",
+        "CRS_DAYTIME": "MWF:1000-1050",
+        "CRS_LEVL": "VC,UG,IH",
+        "CURRENT_ENR": 2,
+        "INSTRUCTOR": "Homrighausen, Jonathan",
+        "OPEN_CLOSED": "OPEN",
+        "PROJ_ENR": 5,
+        "SEATS_AVAIL": "3*",
+        "SUBJECT_CODE": "HBRW",
+        "TERM_CODE": "202220",
+        "TERM_DESC": "Spring 2022",
+        "TITLE": "Elementary Biblical Hebrew"
+    }
+]

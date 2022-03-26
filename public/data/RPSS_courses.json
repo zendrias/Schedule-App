@@ -1,0 +1,38 @@
+[
+    {
+        "COURSE_ATTR": "ARTS",
+        "COURSE_ID": "RPSS 290 02",
+        "COURSE_PTRM": "1",
+        "CREDIT_HRS": "1",
+        "CRN_ID": "22938",
+        "CRS_DAYTIME": "T:1900-2050",
+        "CRS_LEVL": null,
+        "CURRENT_ENR": 13,
+        "INSTRUCTOR": "Yakubeika, Ina",
+        "OPEN_CLOSED": "OPEN",
+        "PROJ_ENR": 20,
+        "SEATS_AVAIL": "16*",
+        "SUBJECT_CODE": "RPSS",
+        "TERM_CODE": "202220",
+        "TERM_DESC": "Spring 2022",
+        "TITLE": "Russian Music Ensemble"
+    },
+    {
+        "COURSE_ATTR": "IN",
+        "COURSE_ID": "RPSS 496 01",
+        "COURSE_PTRM": "1",
+        "CREDIT_HRS": "3",
+        "CRN_ID": "26404",
+        "CRS_DAYTIME": "Not Available",
+        "CRS_LEVL": "UG,IH",
+        "CURRENT_ENR": 1,
+        "INSTRUCTOR": "Prokhorov, Alexander",
+        "OPEN_CLOSED": "CLOSED",
+        "PROJ_ENR": 1,
+        "SEATS_AVAIL": "0",
+        "SUBJECT_CODE": "RPSS",
+        "TERM_CODE": "202220",
+        "TERM_DESC": "Spring 2022",
+        "TITLE": "Honors in RPSS"
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "COURSE_ATTR": "IN",
+        "COURSE_ID": "MDLL 401 01",
+        "COURSE_PTRM": "1",
+        "CREDIT_HRS": "1",
+        "CRN_ID": "21487",
+        "CRS_DAYTIME": "F:1530-1620",
+        "CRS_LEVL": "UG,IH",
+        "CURRENT_ENR": 9,
+        "INSTRUCTOR": "Gully, Jennifer",
+        "OPEN_CLOSED": "OPEN",
+        "PROJ_ENR": 30,
+        "SEATS_AVAIL": "21",
+        "SUBJECT_CODE": "MDLL",
+        "TERM_CODE": "202220",
+        "TERM_DESC": "Spring 2022",
+        "TITLE": "Practicum TFL"
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "COURSE_ATTR": "IN",
+        "COURSE_ID": "PBHL 400 01",
+        "COURSE_PTRM": "1",
+        "CREDIT_HRS": "1",
+        "CRN_ID": "25718",
+        "CRS_DAYTIME": "W:1730-1850",
+        "CRS_LEVL": "VC,UG,IH",
+        "CURRENT_ENR": 8,
+        "INSTRUCTOR": "Scott, Alison",
+        "OPEN_CLOSED": "OPEN",
+        "PROJ_ENR": 20,
+        "SEATS_AVAIL": "12",
+        "SUBJECT_CODE": "PBHL",
+        "TERM_CODE": "202220",
+        "TERM_DESC": "Spring 2022",
+        "TITLE": "Public Health Minor Seminar"
+    },
+    {
+        "COURSE_ATTR": "IN",
+        "COURSE_ID": "PBHL 400 02",
+        "COURSE_PTRM": "1",
+        "CREDIT_HRS": "1",
+        "CRN_ID": "25719",
+        "CRS_DAYTIME": "R:1400-1520",
+        "CRS_LEVL": "VC,UG,IH",
+        "CURRENT_ENR": 10,
+        "INSTRUCTOR": "Scott, Alison",
+        "OPEN_CLOSED": "OPEN",
+        "PROJ_ENR": 20,
+        "SEATS_AVAIL": "10",
+        "SUBJECT_CODE": "PBHL",
+        "TERM_CODE": "202220",
+        "TERM_DESC": "Spring 2022",
+        "TITLE": "Public Health Minor Seminar"
+    }
+]

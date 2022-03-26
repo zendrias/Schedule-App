@@ -1,0 +1,20 @@
+[
+    {
+        "COURSE_ATTR": "C150",
+        "COURSE_ID": "COLL 150 01",
+        "COURSE_PTRM": "1",
+        "CREDIT_HRS": "4",
+        "CRN_ID": "23204",
+        "CRS_DAYTIME": "TR:0930-1050",
+        "CRS_LEVL": "VC,UG,IH",
+        "CURRENT_ENR": 18,
+        "INSTRUCTOR": "Barger, Adam",
+        "OPEN_CLOSED": "CLOSED",
+        "PROJ_ENR": 18,
+        "SEATS_AVAIL": "0",
+        "SUBJECT_CODE": "COLL",
+        "TERM_CODE": "202220",
+        "TERM_DESC": "Spring 2022",
+        "TITLE": "Digital Fluency"
+    }
+]
