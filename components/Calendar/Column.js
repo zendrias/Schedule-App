@@ -1,4 +1,6 @@
-import Cell from './Cell';
+const Cell = () => {
+  return <div></div>;
+};
 
 const Column = ({ day }) => {
   return (
