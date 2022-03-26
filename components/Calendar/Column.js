@@ -6,7 +6,7 @@ const Column = ({ day }) => {
   return (
     <div className="flex flex-col">
       <p className="text-center">{day}</p>
-      <div className="flex-1 grid divide-y mt-4 border-t">
+      <div className="flex-1 grid divide-dashed divide-y mt-4 border-t">
         <Cell />
         <Cell />
         <Cell />

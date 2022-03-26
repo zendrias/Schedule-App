@@ -1,30 +1,12 @@
-import SidebarCourse from './SidebarCourse';
-
-const courses = [
-  {
-    id: 0,
-    days: 'MoWe',
-    startTime: 2,
-    endTime: 3.5,
-    instructor: 'Smith, John',
-    room: 'Tech room',
-  },
-  {
-    id: 1,
-    days: 'TuTh',
-    startTime: 12,
-    endTime: 1,
-    instructor: 'Doe, Jane',
-    room: 'History building',
-  },
-];
+import subjectList from '../../public/data/subjectlist.json';
+import SidebarSubject from './SidebarSubject';
 
 const Sidebar = () => {
   return (
-    <div className="md:w-1/4 border-4 border-yellow-500 rounded-2xl bg-green-50 m-5 p-4">
+    <div className="md:w-1/4 border-4 border-yellow-500 rounded-2xl bg-green-50 m-5 p-4 overflow-auto">
       <h2 className="text-center font-bold text-lg">Courses</h2>
-      {courses.map((course) => {
-        return <SidebarCourse key={course.id} course={course} />;
+      {subjectList.map((subject) => {
+        return <SidebarSubject key={subject.STVSUBJ_CODE} subject={subject} />;
       })}
     </div>
   );
