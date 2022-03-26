@@ -1,5 +1,5 @@
 const Cell = () => {
-  return <div></div>;
+  return <div className=""></div>;
 };
 
 export default Cell;

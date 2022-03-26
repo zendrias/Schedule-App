@@ -4,7 +4,9 @@ const Column = ({ day }) => {
   return (
     <div className="flex flex-col">
       <p className="text-center">{day}</p>
-      <div className="flex-1 grid divide-y">
+      <div className="flex-1 grid divide-y mt-6 border-t">
+        <Cell />
+        <Cell />
         <Cell />
         <Cell />
         <Cell />
