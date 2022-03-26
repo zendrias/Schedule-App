@@ -4,14 +4,16 @@ const courses = [
   {
     id: 0,
     days: 'MoWe',
-    time: '2-3pm',
+    startTime: 2,
+    endTime: 3.5,
     instructor: 'Smith, John',
     room: 'Tech room',
   },
   {
     id: 1,
     days: 'TuTh',
-    time: '12-1pm',
+    startTime: 12,
+    endTime: 1,
     instructor: 'Doe, Jane',
     room: 'History building',
   },
