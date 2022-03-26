@@ -1,0 +1,20 @@
+[
+    {
+        "COURSE_ATTR": "IN",
+        "COURSE_ID": "WRIT 399 01",
+        "COURSE_PTRM": "1",
+        "CREDIT_HRS": "2",
+        "CRN_ID": "21819",
+        "CRS_DAYTIME": "MW:1200-1250",
+        "CRS_LEVL": "VC,UG,IH",
+        "CURRENT_ENR": 17,
+        "INSTRUCTOR": "Jacobson, Lori",
+        "OPEN_CLOSED": "CLOSED",
+        "PROJ_ENR": 15,
+        "SEATS_AVAIL": "-2",
+        "SUBJECT_CODE": "WRIT",
+        "TERM_CODE": "202220",
+        "TERM_DESC": "Spring 2022",
+        "TITLE": "Contemp Th/College Writ"
+    }
+]

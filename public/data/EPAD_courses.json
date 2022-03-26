@@ -1,0 +1,20 @@
+[
+    {
+        "COURSE_ATTR": "C400",
+        "COURSE_ID": "EPAD 496 01",
+        "COURSE_PTRM": "1",
+        "CREDIT_HRS": "3",
+        "CRN_ID": "26285",
+        "CRS_DAYTIME": "Not Available",
+        "CRS_LEVL": "UG,IH",
+        "CURRENT_ENR": 2,
+        "INSTRUCTOR": "Yang, Ran",
+        "OPEN_CLOSED": "OPEN",
+        "PROJ_ENR": 3,
+        "SEATS_AVAIL": "1",
+        "SUBJECT_CODE": "EPAD",
+        "TERM_CODE": "202220",
+        "TERM_DESC": "Spring 2022",
+        "TITLE": "Honors"
+    }
+]

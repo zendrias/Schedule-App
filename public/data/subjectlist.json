@@ -1,0 +1,367 @@
+[
+    {
+        "STVSUBJ_CODE": "AFST",
+        "STVSUBJ_DESC": "Africana Studies",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "AMES",
+        "STVSUBJ_DESC": "Asian & Middle Eastern Studies",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "AMST",
+        "STVSUBJ_DESC": "American Studies",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "ANTH",
+        "STVSUBJ_DESC": "Anthropology",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "APIA",
+        "STVSUBJ_DESC": "Asian&Pac Islander American St",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "APSC",
+        "STVSUBJ_DESC": "Applied Science",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "ARAB",
+        "STVSUBJ_DESC": "Arabic",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "ART",
+        "STVSUBJ_DESC": "Art",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "ARTH",
+        "STVSUBJ_DESC": "Art History",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "BIOL",
+        "STVSUBJ_DESC": "Biology",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "BUAD",
+        "STVSUBJ_DESC": "Business Administration",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "CAMS",
+        "STVSUBJ_DESC": "Comp/App Math & Stats",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "CHEM",
+        "STVSUBJ_DESC": "Chemistry",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "CHIN",
+        "STVSUBJ_DESC": "Chinese",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "CLCV",
+        "STVSUBJ_DESC": "Classical Civilization",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "CMST",
+        "STVSUBJ_DESC": "Community Studies",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "COLL",
+        "STVSUBJ_DESC": "College Courses",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "CONS",
+        "STVSUBJ_DESC": "Conservation",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "CRIN",
+        "STVSUBJ_DESC": "Curriculum & Instruction",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "CRWR",
+        "STVSUBJ_DESC": "Creative Writing",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "CSCI",
+        "STVSUBJ_DESC": "Computer Science",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "DANC",
+        "STVSUBJ_DESC": "Dance",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "DATA",
+        "STVSUBJ_DESC": "Data Science",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "ECON",
+        "STVSUBJ_DESC": "Economics",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "EDUC",
+        "STVSUBJ_DESC": "Education",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "ELEM",
+        "STVSUBJ_DESC": "Elementary Education",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "ENGL",
+        "STVSUBJ_DESC": "English",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "ENSP",
+        "STVSUBJ_DESC": "Environment & Sustainability",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "EPAD",
+        "STVSUBJ_DESC": "Eng Phys & Applied Design",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "EPPL",
+        "STVSUBJ_DESC": "Ed Policy Planning Leadership",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "EURS",
+        "STVSUBJ_DESC": "European Studies",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "FMST",
+        "STVSUBJ_DESC": "Film and Media Studies",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "FREN",
+        "STVSUBJ_DESC": "French & Francophone Studies",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "GBST",
+        "STVSUBJ_DESC": "Global Studies",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "GEOL",
+        "STVSUBJ_DESC": "Geology",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "GIS",
+        "STVSUBJ_DESC": "Geographic Information Systems",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "GOVT",
+        "STVSUBJ_DESC": "Government",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "GRAD",
+        "STVSUBJ_DESC": "Graduate",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "GREK",
+        "STVSUBJ_DESC": "Greek",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "GRMN",
+        "STVSUBJ_DESC": "German Studies",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "GSWS",
+        "STVSUBJ_DESC": "Gender/Sexuality & Women's Std",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "HBRW",
+        "STVSUBJ_DESC": "Hebrew",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "HISP",
+        "STVSUBJ_DESC": "Hispanic Studies",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "HIST",
+        "STVSUBJ_DESC": "History",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "HSCI",
+        "STVSUBJ_DESC": "Health Sciences",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "INRL",
+        "STVSUBJ_DESC": "International Relations",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "INTR",
+        "STVSUBJ_DESC": "Interdisciplinary Studies",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "ITAL",
+        "STVSUBJ_DESC": "Italian",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "JAPN",
+        "STVSUBJ_DESC": "Japanese",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "KINE",
+        "STVSUBJ_DESC": "Kinesiology & Hlth Sciences",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "LAS",
+        "STVSUBJ_DESC": "Latin American Studies",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "LATN",
+        "STVSUBJ_DESC": "Latin",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "LAW",
+        "STVSUBJ_DESC": "Law",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "LING",
+        "STVSUBJ_DESC": "Linguistics",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "MATH",
+        "STVSUBJ_DESC": "Mathematics",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "MDLL",
+        "STVSUBJ_DESC": "Modern Languages/Literatures",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "MLSC",
+        "STVSUBJ_DESC": "Military Science",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "MREN",
+        "STVSUBJ_DESC": "Medieval & Renaissance Studies",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "MSCI",
+        "STVSUBJ_DESC": "Marine Science",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "MUSC",
+        "STVSUBJ_DESC": "Music",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "NSCI",
+        "STVSUBJ_DESC": "Neuroscience",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "PBHL",
+        "STVSUBJ_DESC": "Public Health",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "PHIL",
+        "STVSUBJ_DESC": "Philosophy",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "PHYS",
+        "STVSUBJ_DESC": "Physics",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "PSYC",
+        "STVSUBJ_DESC": "Psychology",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "PUBP",
+        "STVSUBJ_DESC": "Public Policy",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "RELG",
+        "STVSUBJ_DESC": "Religious Studies",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "RPSS",
+        "STVSUBJ_DESC": "Russian & Post-Soviet Studies",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "RUSN",
+        "STVSUBJ_DESC": "Russian",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "SOCL",
+        "STVSUBJ_DESC": "Sociology",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "SPCH",
+        "STVSUBJ_DESC": "Speech",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "THEA",
+        "STVSUBJ_DESC": "Theatre",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    },
+    {
+        "STVSUBJ_CODE": "WRIT",
+        "STVSUBJ_DESC": "Writing",
+        "STVSUBJ_DISP_WEB_IND": "Y"
+    }
+]
