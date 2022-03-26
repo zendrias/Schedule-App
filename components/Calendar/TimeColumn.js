@@ -4,7 +4,7 @@ const TimeColumn = () => {
   return (
     <div className="w-16 flex flex-col">
       <br />
-      <div className="flex-1 grid mt-6">
+      <div className="flex-1 grid mt-4">
         <TimeCell hour={8} />
         <TimeCell hour={9} />
         <TimeCell hour={10} />

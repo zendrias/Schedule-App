@@ -1,7 +1,7 @@
 const formatHour = (hour) => {
-  if (hour < 12) return `${hour}am`;
-  if (hour == 12) return '12pm';
-  return `${hour - 12}pm`;
+  if (hour < 12) return `${hour} am`;
+  if (hour == 12) return '12 pm';
+  return `${hour - 12} pm`;
 };
 
 const TimeCell = ({ hour }) => {

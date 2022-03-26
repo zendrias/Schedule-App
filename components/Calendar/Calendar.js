@@ -3,7 +3,7 @@ import TimeColumn from './TimeColumn';
 
 const Calendar = () => {
   return (
-    <div className="border border-black rounded-md flex flex-1 m-5 p-4">
+    <div className="border-4 border-yellow-500 rounded-2xl flex flex-1 m-5 p-4 bg-green-50">
       <TimeColumn />
       <div className="flex-1 grid grid-cols-5">
         <Column key="Mo" day="Mo" />
