@@ -1,4 +1,4 @@
-import subjectList from '../../public/data/subjectlist.json';
+import courseList from '../../public/data/courses.json';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Logo from '/images/logo.jpg';
@@ -9,8 +9,8 @@ const Header = () => {
 
   useEffect(() => {
     const results = query
-      ? subjectList.filter((c) =>
-          c.STVSUBJ_DESC.toLowerCase().includes(query.toLowerCase())
+      ? courseList.filter((c) =>
+          c.TITLE.toLowerCase().includes(query.toLowerCase())
         )
       : [];
 
@@ -36,8 +36,8 @@ const Header = () => {
               key={course.STVSUBJ_CODE}
               className="card bg-white m-2 border-4 border-black z-10"
             >
-              <div className="">{course.STVSUBJ_CODE}</div>
-              <div className="">{course.STVSUBJ_DESC}</div>
+              <div className="">{course.COURSE_ID}</div>
+              <div className="">{course.TITLE}</div>
             </div>
           ))}
         </div>
