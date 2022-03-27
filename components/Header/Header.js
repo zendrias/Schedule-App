@@ -10,12 +10,18 @@ import {
 
 const SearchResult = ({ course, selectedCourses, setSelectedCourses }) => {
   const courseAvailability = formatCourseAvailability(course.CRS_DAYTIME);
+  const courseAdded = selectedCourses.some((c) => c.id === course.COURSE_ID);
 
   return (
     <button
       key={course.COURSE_ID}
-      className="w-full bg-white my-2 border border-black z-10"
+      className="bg-green-200 border-2 hover:border-green-600 ease-in-out duration-150 disabled:border-none rounded-2xl p-4 w-full my-2 disabled:bg-green-100 text-left text-gray-700"
       onClick={() => addCourse(course, selectedCourses, setSelectedCourses)}
+      disabled={
+        course.OPEN_CLOSED === 'CLOSED' ||
+        course.CRS_DAYTIME === 'Not Available' ||
+        courseAdded
+      }
     >
       <p className="">{course.COURSE_ID}</p>
       <p className="">{course.TITLE}</p>
@@ -47,19 +53,28 @@ const Header = ({ selectedCourses, setSelectedCourses }) => {
   }, [query]);
 
   return (
-    <header className="fixed inset-0 bg-blue-400 h-20 flex flex-row justify-center items-center">
-      <Image src={Logo} width="95" alt="logo" height="95" />
-      <p className="font-bold mx-5 text-2xl">Search Courses</p>
+    <header className="fixed inset-0 bg-green-100 h-20 flex items-center px-6 justify-between z-10">
+      <div className="flex items-center h-full w-1/3">
+        <Image src={Logo} width="80" alt="logo" height="80" />
+        <a
+          className="ml-8 font-bold text-yellow-700 text-2xl"
+          href="https://www.wm.edu/"
+          target="_blank"
+        >
+          William & Mary Course Scheduler
+        </a>
+      </div>
 
-      <div className="relative w-1/3 h-2/3 rounded-xl">
+      <div className="w-1/3 relative h-2/3">
         <input
           name="searchBar"
+          placeholder="Search courses (Spring 2022)"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           type="search"
-          className="bg-green-100 h-full w-full rounded-xl border-4 border-orange-300 p-2"
+          className="bg-gray-100 h-full w-full rounded-md border-2 border-orange-300 px-4"
         />
-        <div className="absolute overflow-auto max-h-96 bg-gray-200 px-2">
+        <div className="absolute overflow-auto max-h-96 bg-yellow-100 px-2">
           {searchResults?.map((course) => (
             <SearchResult
               key={course.COURSE_ID}
@@ -70,6 +85,14 @@ const Header = ({ selectedCourses, setSelectedCourses }) => {
           ))}
         </div>
       </div>
+
+      <a
+        href="https://courselist.wm.edu/courselist/"
+        className="bg-green-700 text-white py-3 px-4 rounded-lg hover:bg-green-600 ease-in-out duration-300"
+        target="_blank"
+      >
+        W&M Course Catalog
+      </a>
     </header>
   );
 };

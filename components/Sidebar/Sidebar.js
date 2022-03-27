@@ -15,11 +15,13 @@ const Sidebar = ({ selectedCourses, setSelectedCourses }) => {
   const [selectedSubject, setSelectedSubject] = useState('');
 
   return (
-    <div className="flex flex-col h-96 lg:h-auto lg:w-1/4 border-4 border-yellow-500 rounded-2xl bg-green-50 m-5 p-4">
+    <div className="flex flex-col h-96 lg:h-auto lg:w-1/4 border-2 border-yellow-500 rounded-2xl bg-green-50 m-5 p-4">
       {selectedSubject !== '' ? (
         <BackButton setSelectedSubject={setSelectedSubject} />
       ) : null}
-      <h2 className="text-center font-bold text-lg">Courses</h2>
+      <h2 className="text-center text-2xl text-gray-600 my-2">
+        {selectedSubject === '' ? 'SUBJECTS' : 'COURSES'}
+      </h2>
       {selectedSubject === '' ? (
         <SubjectList setSelectedSubject={setSelectedSubject} />
       ) : (

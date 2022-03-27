@@ -2,10 +2,10 @@ import subjectList from '../../public/data/subjectlist.json';
 
 const Subject = ({ subject, setSelectedSubject }) => (
   <button
-    className="bg-green-200 rounded-2xl p-4 w-full my-2"
+    className="bg-green-200 border-2 hover:border-green-600 ease-in-out duration-150 rounded-xl p-4 w-full my-2 text-left text-gray-600"
     onClick={() => setSelectedSubject(subject.STVSUBJ_CODE)}
   >
-    <p>{subject.STVSUBJ_CODE}</p>
+    <p className="text-2xl">{subject.STVSUBJ_CODE}</p>
     <p>{subject.STVSUBJ_DESC}</p>
   </button>
 );

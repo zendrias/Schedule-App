@@ -10,7 +10,7 @@ const Course = ({ course, selectedCourses, setSelectedCourses }) => {
 
   return (
     <button
-      className="bg-green-200 rounded-2xl p-4 w-full my-2 disabled:bg-green-100 text-left text-gray-700"
+      className="bg-green-200 border-2 hover:border-green-600 ease-in-out duration-150 disabled:border-none rounded-2xl p-4 w-full my-2 disabled:bg-green-100 text-left text-gray-700"
       onClick={() => addCourse(course, selectedCourses, setSelectedCourses)}
       disabled={
         course.OPEN_CLOSED === 'CLOSED' ||
