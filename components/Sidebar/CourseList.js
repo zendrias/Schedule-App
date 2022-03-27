@@ -6,6 +6,10 @@ const dayMap = {
   F: 'Fr',
 };
 
+const formatDays = (days) => {
+  return days.split('').map((day) => dayMap[day]);
+};
+
 const formatTime = (time) => {
   const hour = time.slice(0, 2);
   const minute = time.slice(2);
@@ -17,53 +21,90 @@ const formatTime = (time) => {
 
 const formatCourseAvailability = (courseAvailability) => {
   if (courseAvailability === 'Not Available') return {};
-
-  const days = courseAvailability
-    .split(':')[0]
-    .split('')
-    .map((day) => dayMap[day]);
-  const time = courseAvailability.split(':')[1];
-  const [startTime, endTime] = time.split('-');
+  const days = formatDays(courseAvailability.split(':')[0]);
+  const [startTime, endTime] = courseAvailability.split(':')[1].split('-');
 
   return {
     days,
-    startTime: formatTime(startTime),
-    endTime: formatTime(endTime),
+    startTime,
+    endTime,
   };
 };
 
-const handleCourseOnClick = (course) => {
-  console.log('select course');
+const calendarTime = (time) => {
+  const hour = Number(time.slice(0, 2));
+  const minute = Number(time.slice(2));
+  return hour + minute / 60;
 };
 
-const Course = ({ course }) => {
+const handleCourseOnClick = (course, selectedCourses, setSelectedCourses) => {
+  const days = formatDays(course.CRS_DAYTIME.split(':')[0]);
+  const [startTime, endTime] = course.CRS_DAYTIME.split(':')[1].split('-');
+  if (!selectedCourses.some((c) => c.id === course.COURSE_ID)) {
+    setSelectedCourses([
+      ...selectedCourses,
+      {
+        id: course.COURSE_ID,
+        title: course.TITLE,
+        days: days,
+        startTime: calendarTime(startTime),
+        endTime: calendarTime(endTime),
+      },
+    ]);
+  }
+};
+
+const Course = ({ course, selectedCourses, setSelectedCourses }) => {
   const courseAvailability = formatCourseAvailability(course.CRS_DAYTIME);
+  const courseAdded = selectedCourses.some((c) => c.id === course.COURSE_ID);
 
   return (
     <button
-      className="bg-green-200 rounded-2xl p-4 w-full my-2 disabled:bg-green-100"
-      onClick={() => handleCourseOnClick(course)}
+      className="bg-green-200 rounded-2xl p-4 w-full my-2 disabled:bg-green-100 text-left text-gray-700"
+      onClick={() =>
+        handleCourseOnClick(course, selectedCourses, setSelectedCourses)
+      }
       disabled={
         course.OPEN_CLOSED === 'CLOSED' ||
-        course.CRS_DAYTIME === 'Not Available'
+        course.CRS_DAYTIME === 'Not Available' ||
+        courseAdded
       }
     >
+      {courseAdded && <p className="text-red-400">already added</p>}
+      {course.OPEN_CLOSED === 'CLOSED' && (
+        <p className="text-red-400">class full</p>
+      )}
       <p>{course.COURSE_ID}</p>
       <p>{course.TITLE}</p>
       <p>{courseAvailability.days}</p>
-      <p>{`${courseAvailability.startTime}-${courseAvailability.endTime}`}</p>
+      {course.CRS_DAYTIME !== 'Not Available' ? (
+        <p>{`${formatTime(courseAvailability.startTime)}-${formatTime(
+          courseAvailability.endTime
+        )}`}</p>
+      ) : (
+        'Not Available'
+      )}
       <p>{course.INSTRUCTOR}</p>
     </button>
   );
 };
 
-const CourseList = ({ selectedSubject }) => {
+const CourseList = ({
+  selectedSubject,
+  selectedCourses,
+  setSelectedCourses,
+}) => {
   const courses = require(`../../public/data/${selectedSubject}_courses.json`);
 
   return (
     <div className="overflow-auto flex-1">
       {courses.map((course) => (
-        <Course key={course.COURSE_ID} course={course} />
+        <Course
+          key={course.COURSE_ID}
+          course={course}
+          selectedCourses={selectedCourses}
+          setSelectedCourses={setSelectedCourses}
+        />
       ))}
     </div>
   );

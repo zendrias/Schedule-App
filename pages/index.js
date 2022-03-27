@@ -1,9 +1,12 @@
+import { useState } from 'react';
 import Calendar from '../components/Calendar/Calendar';
 import Head from 'next/head';
 import Header from '../components/Header/Header';
 import Sidebar from '../components/Sidebar/Sidebar';
-export default function Home() {
 
+export default function Home() {
+  const [selectedCourses, setSelectedCourses] = useState([]);
+  console.log(selectedCourses)
 
   return (
     <>
@@ -12,8 +15,14 @@ export default function Home() {
       </Head>
       <Header />
       <main className="flex flex-col lg:flex-row h-screen pt-20">
-        <Sidebar />
-        <Calendar />
+        <Sidebar
+          selectedCourses={selectedCourses}
+          setSelectedCourses={setSelectedCourses}
+        />
+        <Calendar
+          selectedCourses={selectedCourses}
+          setSelectedCourses={setSelectedCourses}
+        />
       </main>
     </>
   );
