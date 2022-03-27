@@ -14,7 +14,6 @@ const SearchResult = ({ course, selectedCourses, setSelectedCourses }) => {
 
   return (
     <button
-      key={course.COURSE_ID}
       className="bg-green-200 border-2 hover:border-green-600 ease-in-out duration-150 disabled:border-none rounded-2xl p-4 w-full my-2 disabled:bg-green-100 text-left text-gray-700"
       onClick={() => addCourse(course, selectedCourses, setSelectedCourses)}
       disabled={
@@ -23,8 +22,12 @@ const SearchResult = ({ course, selectedCourses, setSelectedCourses }) => {
         courseAdded
       }
     >
-      <p className="">{course.COURSE_ID}</p>
-      <p className="">{course.TITLE}</p>
+      {courseAdded && <p className="text-red-400">already added</p>}
+      {course.OPEN_CLOSED === 'CLOSED' && (
+        <p className="text-red-400">class full</p>
+      )}
+      <p>{course.COURSE_ID}</p>
+      <p>{course.TITLE}</p>
       <p>{courseAvailability.days}</p>
       {course.CRS_DAYTIME !== 'Not Available' ? (
         <p>{`${formatTime(courseAvailability.startTime)}-${formatTime(
@@ -74,12 +77,11 @@ const Header = ({ selectedCourses, setSelectedCourses }) => {
           onChange={(e) => setQuery(e.target.value)}
           type="search"
           className="bg-gray-100 h-full w-full rounded-md border-2 border-orange-300 px-4 focus:outline-none"
-          onBlur={() => setSearchResults([])}
         />
         <div className="absolute overflow-auto max-h-96 w-full bg-yellow-50 px-2">
-          {searchResults?.map((course) => (
+          {searchResults?.map((course, idx) => (
             <SearchResult
-              key={course.COURSE_ID}
+              key={idx}
               course={course}
               selectedCourses={selectedCourses}
               setSelectedCourses={setSelectedCourses}
