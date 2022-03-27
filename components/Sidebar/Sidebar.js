@@ -15,7 +15,7 @@ const Sidebar = () => {
   const [selectedSubject, setSelectedSubject] = useState('');
 
   return (
-    <div className="flex flex-col md:w-1/4 border-4 border-yellow-500 rounded-2xl bg-green-50 m-5 p-4">
+    <div className="flex flex-col h-96 lg:h-auto lg:w-1/4 border-4 border-yellow-500 rounded-2xl bg-green-50 m-5 p-4">
       {selectedSubject !== '' ? (
         <BackButton setSelectedSubject={setSelectedSubject} />
       ) : null}
