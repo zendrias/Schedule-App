@@ -60,6 +60,7 @@ const Header = ({ selectedCourses, setSelectedCourses }) => {
           className="ml-8 font-bold text-yellow-700 text-2xl"
           href="https://www.wm.edu/"
           target="_blank"
+          rel="noreferrer"
         >
           William & Mary Course Scheduler
         </a>
@@ -90,6 +91,7 @@ const Header = ({ selectedCourses, setSelectedCourses }) => {
         href="https://courselist.wm.edu/courselist/"
         className="bg-green-700 text-white py-3 px-4 rounded-lg hover:bg-green-600 ease-in-out duration-300"
         target="_blank"
+        rel="noreferrer"
       >
         W&M Course Catalog
       </a>
