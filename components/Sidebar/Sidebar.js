@@ -11,7 +11,7 @@ const BackButton = ({ setSelectedSubject }) => (
   </button>
 );
 
-const Sidebar = () => {
+const Sidebar = ({ selectedCourses, setSelectedCourses }) => {
   const [selectedSubject, setSelectedSubject] = useState('');
 
   return (
@@ -23,7 +23,11 @@ const Sidebar = () => {
       {selectedSubject === '' ? (
         <SubjectList setSelectedSubject={setSelectedSubject} />
       ) : (
-        <CourseList selectedSubject={selectedSubject} />
+        <CourseList
+          selectedSubject={selectedSubject}
+          selectedCourses={selectedCourses}
+          setSelectedCourses={setSelectedCourses}
+        />
       )}
     </div>
   );
