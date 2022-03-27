@@ -10,7 +10,7 @@ const Calendar = ({ selectedCourses, setSelectedCourses }) => {
           <Column
             key={day}
             day={day}
-            courses={selectedCourses.filter((c) => c['days'].includes(day))}
+            selectedCourses={selectedCourses}
             setSelectedCourses={setSelectedCourses}
           />
         ))}

@@ -6,7 +6,6 @@ import Sidebar from '../components/Sidebar/Sidebar';
 
 export default function Home() {
   const [selectedCourses, setSelectedCourses] = useState([]);
-  console.log(selectedCourses);
 
   return (
     <>
