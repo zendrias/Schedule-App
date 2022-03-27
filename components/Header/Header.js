@@ -73,9 +73,10 @@ const Header = ({ selectedCourses, setSelectedCourses }) => {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           type="search"
-          className="bg-gray-100 h-full w-full rounded-md border-2 border-orange-300 px-4"
+          className="bg-gray-100 h-full w-full rounded-md border-2 border-orange-300 px-4 focus:outline-none"
+          onBlur={() => setSearchResults([])}
         />
-        <div className="absolute overflow-auto max-h-96 bg-yellow-50 px-2">
+        <div className="absolute overflow-auto max-h-96 w-full bg-yellow-50 px-2">
           {searchResults?.map((course) => (
             <SearchResult
               key={course.COURSE_ID}
