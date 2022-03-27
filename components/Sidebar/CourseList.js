@@ -1,21 +1,44 @@
+const dayMap = {
+  M: 'Mo',
+  T: 'Tu',
+  W: 'We',
+  R: 'Th',
+  F: 'Fr',
+};
+
+const formatTime = (time) => {
+  const hour = time.slice(0, 2);
+  const minute = time.slice(2);
+  if (Number(hour) > 12) {
+    return `${hour - 12}:${minute}pm`;
+  }
+  return `${hour}:${minute}am`;
+};
+
 const formatCourseAvailability = (courseAvailability) => {
-  const days = courseAvailability.split(':')[0];
+  if (courseAvailability === 'Not Available') return {};
+
+  const days = courseAvailability
+    .split(':')[0]
+    .split('')
+    .map((day) => dayMap[day]);
   const time = courseAvailability.split(':')[1];
   const [startTime, endTime] = time.split('-');
 
   return {
     days,
-    startTime,
-    endTime,
+    startTime: formatTime(startTime),
+    endTime: formatTime(endTime),
   };
 };
 
 const handleCourseOnClick = (course) => {
-  const courseAvailability = formatCourseAvailability(course.CRS_DAYTIME);
-  console.log(courseAvailability);
+  console.log('select course');
 };
 
 const Course = ({ course }) => {
+  const courseAvailability = formatCourseAvailability(course.CRS_DAYTIME);
+
   return (
     <button
       className="bg-green-200 rounded-2xl p-4 w-full my-2 disabled:bg-green-100"
@@ -27,9 +50,9 @@ const Course = ({ course }) => {
     >
       <p>{course.COURSE_ID}</p>
       <p>{course.TITLE}</p>
-      <p>{course.CRS_DAYTIME}</p>
+      <p>{courseAvailability.days}</p>
+      <p>{`${courseAvailability.startTime}-${courseAvailability.endTime}`}</p>
       <p>{course.INSTRUCTOR}</p>
-      <p>{course.OPEN_CLOSED}</p>
     </button>
   );
 };
