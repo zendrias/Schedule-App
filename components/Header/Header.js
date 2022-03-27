@@ -16,7 +16,8 @@ const SearchResult = ({ course, selectedCourses, setSelectedCourses }) => {
     <button
       key={course.COURSE_ID}
       className="bg-green-200 border-2 hover:border-green-600 ease-in-out duration-150 disabled:border-none rounded-2xl p-4 w-full my-2 disabled:bg-green-100 text-left text-gray-700"
-      onClick={() => addCourse(course, selectedCourses, setSelectedCourses)}
+      //onClick={() => addCourse(course, selectedCourses, setSelectedCourses)}
+      onClick={() => console.log('working')}
       disabled={
         course.OPEN_CLOSED === 'CLOSED' ||
         course.CRS_DAYTIME === 'Not Available' ||

@@ -41,20 +41,29 @@ const CourseList = ({
   selectedSubject,
   selectedCourses,
   setSelectedCourses,
+  showOnlyOpen,
 }) => {
-  const courses = require(`../../public/data/${selectedSubject}_courses.json`);
+  let courses = require(`../../public/data/${selectedSubject}_courses.json`);
+  if (showOnlyOpen) {
+    courses = courses.filter((c) => c.OPEN_CLOSED !== 'CLOSED');
+  }
 
   return (
-    <div className="overflow-auto flex-1">
-      {courses.map((course) => (
-        <Course
-          key={course.COURSE_ID}
-          course={course}
-          selectedCourses={selectedCourses}
-          setSelectedCourses={setSelectedCourses}
-        />
-      ))}
-    </div>
+    <>
+      <p className="text-center text-md text-gray-600 mb-2">
+        {`${courses.length} results`}
+      </p>
+      <div className="overflow-auto flex-1">
+        {courses.map((course) => (
+          <Course
+            key={course.COURSE_ID}
+            course={course}
+            selectedCourses={selectedCourses}
+            setSelectedCourses={setSelectedCourses}
+          />
+        ))}
+      </div>
+    </>
   );
 };
 
