@@ -13,7 +13,7 @@ const SearchResult = ({ course, selectedCourses, setSelectedCourses }) => {
 
   return (
     <button
-      key={course.STVSUBJ_CODE}
+      key={course.COURSE_ID}
       className="w-full bg-white my-2 border border-black z-10"
       onClick={() => addCourse(course, selectedCourses, setSelectedCourses)}
     >
@@ -62,6 +62,7 @@ const Header = ({ selectedCourses, setSelectedCourses }) => {
         <div className="absolute overflow-auto max-h-96 bg-gray-200 px-2">
           {searchResults?.map((course) => (
             <SearchResult
+              key={course.COURSE_ID}
               course={course}
               selectedCourses={selectedCourses}
               setSelectedCourses={setSelectedCourses}
