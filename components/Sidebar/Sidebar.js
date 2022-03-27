@@ -26,7 +26,7 @@ const Sidebar = ({ selectedCourses, setSelectedCourses }) => {
           checked={showOnlyOpen}
           onChange={() => setShowOnlyOpen(!showOnlyOpen)}
         />
-        <label className="ml-2 text-gray-600" for="open">
+        <label className="ml-2 text-gray-600" htmlFor="open">
           Only show open courses
         </label>
       </div>
